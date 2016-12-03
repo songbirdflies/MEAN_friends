@@ -1,0 +1,13 @@
+<div ng-controller="editController"> 
+ <h3>Edit Friend</h3>
+    		<form>    
+          <p>First Name: <input type='text' value='{{friend.first_name}}' ng-model='friend.first_name'></p> 
+            <p>Last Name: <input type='text' value='{{friend.last_name}}' ng-model='friend.last_name'></p>
+            <p>Date of Birth: <input type='text' value='{{friend.dob}}' ng-model='friend.dob'></p> 
+
+        <input type='submit' value='Update Friend' ng-click='update()'>
+       </form>
+
+</div>
+
+</div>

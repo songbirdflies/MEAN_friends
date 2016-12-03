@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!-- DONT FORGET TO ADD YOUR ANGULAR APP! -->
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Awesome Friends</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular-route.min.js"></script>  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-messages.js"></script>
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <script src="/assets/app.js" charset="utf-8"></script>
+    <script src="/assets/controllers/newController.js" charset="utf-8"></script>
+    <script src="/assets/controllers/editController.js" charset="utf-8"></script>
+    <script src="/assets/controllers/showController.js" charset="utf-8"></script>
+    <script src="/assets/factories/friendsFactory.js" charset="utf-8"></script>
+    <link href="/favicon.ico" type="image/x-icon" rel="icon" />
+    <style>
+      table, tr, th {
+         border: solid 1px; 
+         padding: 10px;
+         text-align: center;
+      }
+      table {
+        margin-bottom: 20px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <!-- Links to your new and edit pages here.  Review Angular Partials if you've forgotten ) -->
+    <!-- not so subtle hint: ng-view ??? -->
+    <div style="padding-left: 20px" ng-view="">
+    
+    </div>
+
+  </body>
+</html>

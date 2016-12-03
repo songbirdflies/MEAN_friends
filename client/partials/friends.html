@@ -1,0 +1,22 @@
+<div ng-controller="newController"> 
+ <h3>Awesome Friends!</h3>
+      <p>Filter Birthday: </p>
+      <input type="text" ng-model="filter_dob">
+      
+      <table>
+	      	<tr>
+	      		<th>Name</th>
+	      		<th>Show</th>
+	      		<th>Update</th>
+	      		<th>Delete</th>
+	      	</tr>
+	      	<tr ng-repeat="friend in friends | filter: filter_dob | orderBy:'dob'">
+	      		<th>{{friend.first_name}} {{friend.last_name}}</th>
+	      		<th><a href="#/{{friend._id}}">Show</a></th>
+	      		<th><a href="#/{{friend._id}}/update">Update</a></th>
+	      		<th><a href="#/" ng-click="destroy(friend._id)">Delete</a></th>
+	      	</tr>
+      </table>
+
+      <a href="#/new"><button>New Friend</button></a>
+</div>
